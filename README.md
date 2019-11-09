@@ -47,3 +47,5 @@ docker-compose up -d
 docker-compose ps
 
 docker-compose run app rake db:setup
+
+docker rm $(docker ps -a -q)
